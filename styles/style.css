@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --corfundo-01: #380E40;
+    --corfundo-02: #F36366;
+    --corfundo-03: #1CADAD;
+}
+::-webkit-scrollbar{
+    width: 3px;
+    background-color: var(--corfundo-01);
+}
+body{
+    background-image: linear-gradient(to left,var(--corfundo-01), var(--corfundo-02));
+}
+main{
+    
+    text-align: center;
+    margin-top: 200px;
+}
+h1{
+    color: white;
+    margin-bottom: 15px;
+    text-shadow: 1px 0px 2px black;
+}
+input{
+    width: 400px;
+    padding: 15px;
+    font: normal normal 1.2em Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
+}
+input:hover{
+    box-shadow: 0px 0px 17px rgba(255, 255, 255, 0.199);
+    padding: 17px;
+    transition: 0.15s;
+}
+input:focus{
+    box-shadow: 0px 0px 17px rgba(255, 255, 255, 0.199);
+    padding: 17px;
+}
+button.send{
+    padding: 15px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
+    cursor: pointer;
+}
+.send:hover{
+    box-shadow: 0px 0px 17px rgba(255, 255, 255, 0.199);
+    /* padding: 17px; */
+    background-color: var(--corfundo-01);
+    color: white;
+    transition: 0.15s;
+}
+.res{
+    margin-top: 50px;
+    margin-bottom: 65px;
+}
+ul p{
+    position: relative;
+    display: flex;
+    background-color: white;
+    margin: auto;
+    height: 50px;
+    width: 500px;
+    margin-top: 9px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
+}
+
+li{
+    padding: 15px;
+    list-style-type: none;
+    font-weight: bold;
+    
+}
+
+.btn-del{
+    color: var(--corfundo-01);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+    margin-left: 3px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    font-weight: bolder;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+.btn-del:hover{
+    color: red;
+    font-size: 1.3em;
+    top: 4px;
+    right: 8px;
+}
+
+.btn-done{
+    color: var(--corfundo-01);
+    background-color: white;
+    padding: 10px;
+    margin-left: 3px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    font-weight: bolder;
+    position: absolute;
+    top: 7px;
+    right: 50px;
+}
+.btn-done:hover{
+    color: var(--corfundo-03);
+    font-size: 1.3em;
+    top: 4px;
+    right: 48px;
+}
+
+.task-complete{
+    text-decoration: line-through;
+    background-color: var(--corfundo-01);
+    color: white;
+    transition: 0.5s;
+}
+.merge-done{
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+}
+.merge-done:hover{
+    color: var(--corfundo-02);
+    font-size: 1.3em;
+    top: 4px;
+    right: 48px;
+}
+.merge-del{
+    background-color: transparent;
+    color: white;
+}
+.merge-del:hover{
+    color: #F36366;
+    font-size: 1.3em;
+    top: 4px;
+    right: 8px;
+}
