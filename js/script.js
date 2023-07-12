@@ -3,7 +3,6 @@ let input = document.querySelector('#task')
 let res = document.querySelector('.res')
 let task = document.createElement('ul')
 
-
 const adctask = () => {
 
     let p = document.createElement('p')
